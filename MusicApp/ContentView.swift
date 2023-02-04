@@ -7,15 +7,34 @@
 
 import SwiftUI
 
+class HomeModel: ObservableObject {
+    
+    
+    @Published var login:Bool=false
+    
+    init() {
+        checkLoginStatu()
+    }
+    
+    func checkLoginStatu(){
+        let cookie = UserDefaults.standard.object(forKey: "cookie") as? String ?? ""
+        Api.cookie = cookie
+        self.login = !cookie.isEmpty
+    }
+}
+
+
+
 struct ContentView: View {
+    
+    @ObservedObject var homeModel = HomeModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if homeModel.login{
+            PlaylistView()
+        }else{
+            LoginView()
         }
-        .padding()
     }
 }
 

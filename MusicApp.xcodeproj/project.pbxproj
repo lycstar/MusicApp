@@ -11,6 +11,15 @@
 		7C128B1F298D1A8900E58C4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C128B1E298D1A8900E58C4D /* ContentView.swift */; };
 		7C128B21298D1A8B00E58C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C128B20298D1A8B00E58C4D /* Assets.xcassets */; };
 		7C128B25298D1A8B00E58C4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C128B24298D1A8B00E58C4D /* Preview Assets.xcassets */; };
+		7C128B2C298D324000E58C4D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C128B2B298D324000E58C4D /* LoginView.swift */; };
+		7C128B2E298D35FA00E58C4D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C128B2D298D35FA00E58C4D /* Api.swift */; };
+		7C62AA41298DF7B60004FEEE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62AA40298DF7B60004FEEE /* Extensions.swift */; };
+		7C62AA45298E17E50004FEEE /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62AA44298E17E50004FEEE /* PlaylistView.swift */; };
+		7C62AA83298E498A0004FEEE /* Ar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62AA7E298E498A0004FEEE /* Ar.swift */; };
+		7C62AA84298E498A0004FEEE /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62AA7F298E498A0004FEEE /* Creator.swift */; };
+		7C62AA85298E498A0004FEEE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62AA80298E498A0004FEEE /* Track.swift */; };
+		7C62AA86298E498A0004FEEE /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62AA81298E498A0004FEEE /* Playlist.swift */; };
+		7C62AA87298E498A0004FEEE /* Al.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62AA82298E498A0004FEEE /* Al.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,16 @@
 		7C128B20298D1A8B00E58C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C128B22298D1A8B00E58C4D /* MusicApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicApp.entitlements; sourceTree = "<group>"; };
 		7C128B24298D1A8B00E58C4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C128B2B298D324000E58C4D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7C128B2D298D35FA00E58C4D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		7C128B2F298D4A0300E58C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7C62AA40298DF7B60004FEEE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7C62AA44298E17E50004FEEE /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
+		7C62AA7E298E498A0004FEEE /* Ar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ar.swift; sourceTree = "<group>"; };
+		7C62AA7F298E498A0004FEEE /* Creator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
+		7C62AA80298E498A0004FEEE /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		7C62AA81298E498A0004FEEE /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		7C62AA82298E498A0004FEEE /* Al.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Al.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +71,20 @@
 		7C128B1B298D1A8900E58C4D /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				7C62AA82298E498A0004FEEE /* Al.swift */,
+				7C62AA7E298E498A0004FEEE /* Ar.swift */,
+				7C62AA7F298E498A0004FEEE /* Creator.swift */,
+				7C62AA81298E498A0004FEEE /* Playlist.swift */,
+				7C62AA80298E498A0004FEEE /* Track.swift */,
+				7C128B2F298D4A0300E58C4D /* Info.plist */,
 				7C128B1C298D1A8900E58C4D /* MusicAppApp.swift */,
 				7C128B1E298D1A8900E58C4D /* ContentView.swift */,
 				7C128B20298D1A8B00E58C4D /* Assets.xcassets */,
 				7C128B22298D1A8B00E58C4D /* MusicApp.entitlements */,
+				7C128B2B298D324000E58C4D /* LoginView.swift */,
+				7C128B2D298D35FA00E58C4D /* Api.swift */,
+				7C62AA40298DF7B60004FEEE /* Extensions.swift */,
+				7C62AA44298E17E50004FEEE /* PlaylistView.swift */,
 				7C128B23298D1A8B00E58C4D /* Preview Content */,
 			);
 			path = MusicApp;
@@ -139,8 +168,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C62AA84298E498A0004FEEE /* Creator.swift in Sources */,
+				7C62AA45298E17E50004FEEE /* PlaylistView.swift in Sources */,
+				7C62AA41298DF7B60004FEEE /* Extensions.swift in Sources */,
+				7C62AA83298E498A0004FEEE /* Ar.swift in Sources */,
+				7C128B2C298D324000E58C4D /* LoginView.swift in Sources */,
+				7C62AA85298E498A0004FEEE /* Track.swift in Sources */,
+				7C62AA87298E498A0004FEEE /* Al.swift in Sources */,
 				7C128B1F298D1A8900E58C4D /* ContentView.swift in Sources */,
+				7C128B2E298D35FA00E58C4D /* Api.swift in Sources */,
 				7C128B1D298D1A8900E58C4D /* MusicAppApp.swift in Sources */,
+				7C62AA86298E498A0004FEEE /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +307,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -277,8 +316,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -307,6 +346,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -315,8 +355,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
