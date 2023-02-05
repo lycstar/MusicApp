@@ -28,7 +28,7 @@ struct Track : Codable {
 	}
 	init(from decoder: Decoder) throws {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
-		al = try Al(from: decoder)
+		al = try values.decodeIfPresent(Al.self, forKey: .al)
 		ar = try values.decodeIfPresent([Ar].self, forKey: .ar)
 		dt = try values.decodeIfPresent(Int.self, forKey: .dt)
 		fee = try values.decodeIfPresent(Int.self, forKey: .fee)

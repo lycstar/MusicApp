@@ -120,7 +120,7 @@ struct Api {
                     URLQueryItem(name: "timestamp", value:Date().currentTimeMillis()),
                     URLQueryItem(name: "cookie",value: cookie),
                     URLQueryItem(name: "id", value: String(playlistId!)),
-                    //                    URLQueryItem(name: "id", value: String(7297780332)),
+//                                        URLQueryItem(name: "id", value: String(3215936658)),
                 ]
                 let (data,_) =  try await URLSession.shared.data(from: url.url!)
                 let map = try JSONSerialization.jsonObject(with:data) as! Dictionary<String,Any>
@@ -160,20 +160,5 @@ struct Api {
         }
         return url!
 //        return "\(url!)?param=400y400"
-    }
-    
-    static func fetchCompleteArtistName(arList:[Ar]) -> String{
-        if(arList.count==1){
-            return arList.first?.name ?? ""
-        }
-        var name = ""
-        for i in 0..<arList.count {
-            name = name + (arList[i].name ?? "")
-            if(i != arList.count-1){
-                name = name+"/"
-            }
-        }
-        
-        return name
     }
 }

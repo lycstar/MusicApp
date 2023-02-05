@@ -26,3 +26,24 @@ extension Image {
         self = Image(uiImage: uiImage)
     }
 }
+
+
+extension Track {
+    
+    func artistsName() ->String{
+        if(ar == nil){
+            return "";
+        }
+        if(ar!.count == 1){
+            return ar!.first?.name ?? ""
+        }
+        var name = ""
+        for i in 0..<ar!.count {
+            name = name + (ar![i].name ?? "")
+            if(i != ar!.count-1){
+                name = name+"/"
+            }
+        }
+        return name
+    }
+}
