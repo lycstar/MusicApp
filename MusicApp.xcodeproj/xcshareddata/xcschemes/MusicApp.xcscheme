@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7C128B18298D1A8900E58C4D"
-               BuildableName = "MusicApp.app"
+               BuildableName = "MusicApp"
                BlueprintName = "MusicApp"
                ReferencedContainer = "container:MusicApp.xcodeproj">
             </BuildableReference>
@@ -45,11 +45,15 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C128B18298D1A8900E58C4D"
-            BuildableName = "MusicApp.app"
+            BuildableName = "MusicApp"
             BlueprintName = "MusicApp"
             ReferencedContainer = "container:MusicApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <LocationScenarioReference
+         identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
+         referenceType = "1">
+      </LocationScenarioReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

@@ -4,22 +4,22 @@
 
 import Foundation
 
-struct Al : Codable {
+struct Al: Codable {
 
-	let id : Int?
-	let name : String?
-	let picUrl : String?
+    let id: Int?
+    let name: String?
+    let picUrl: String?
 
-
-	enum CodingKeys: String, CodingKey {
-		case id = "id"
-		case name = "name"
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case name = "name"
         case picUrl = "picUrl"
-	}
-	init(from decoder: Decoder) throws {
-		let values = try decoder.container(keyedBy: CodingKeys.self)
-		id = try values.decodeIfPresent(Int.self, forKey: .id)
-		name = try values.decodeIfPresent(String.self, forKey: .name)
-		picUrl = try values.decodeIfPresent(String.self, forKey: .picUrl)
-	}
+    }
+
+    init(from decoder: Decoder) throws {
+        let values: KeyedDecodingContainer<Al.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
+        id = try values.decodeIfPresent(Int.self, forKey: .id)
+        name = try values.decodeIfPresent(String.self, forKey: .name)
+        picUrl = try values.decodeIfPresent(String.self, forKey: .picUrl)
+    }
 }
